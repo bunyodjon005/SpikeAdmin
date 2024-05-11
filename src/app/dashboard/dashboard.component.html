@@ -1,0 +1,36 @@
+<div class="mains">
+  <form action="">
+    <div class="form_img">
+      <img src="./assets/dark-logo.svg" alt="photo error!">
+    </div>
+    <div class="page_buttons">
+    <div></div>
+    <div></div>
+    </div>
+  </form>
+</div>
+<div class="main" *ngIf="mains">
+  <app-sidenav></app-sidenav>
+  <mat-toolbar>
+    <div>
+      <div class="icon">
+        <mat-icon (click)="menu()" class="menu">menu</mat-icon>
+        <mat-icon>notifications_active</mat-icon>
+      </div>
+      <div class="button_img_page">
+        <button>Upgrade to Pro</button>
+        <img (click)="knop()" src="./assets/user-1.jpg" alt="photo error!">
+      </div>
+    </div>
+  </mat-toolbar>
+  <div class="profil" *ngIf="expresion">
+    <div class="lists">
+      <ul>
+        <li (click)="knop()"> <mat-icon>person</mat-icon> <span>My Profile</span></li>
+        <li (click)="knop()"> <mat-icon>system_update_alt</mat-icon> <span>My Account</span></li>
+        <li (click)="knop()"> <mat-icon>playlist_add</mat-icon> <span>My Task</span></li>
+      </ul>
+      <button>Logout</button>
+    </div>
+  </div>
+</div>
