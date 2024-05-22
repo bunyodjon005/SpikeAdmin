@@ -10,7 +10,8 @@ export class AuthenticationService {
     if (this.jwt) {
       this.Loggedin = true;
       return true;
-    } else {
+    }
+     else {
       return false;
     }
   }

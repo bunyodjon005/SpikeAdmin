@@ -1,15 +1,49 @@
-<div class="mains">
+<!-- <div class="mains" *ngIf="!authen.isLoggedin()">
   <form action="">
     <div class="form_img">
       <img src="./assets/dark-logo.svg" alt="photo error!">
     </div>
     <div class="page_buttons">
-    <div></div>
-    <div></div>
+    <div class="page_google_icon">
+      <img src="./assets/google-icon.svg" alt="photo error!">
+      <span>Signin with Google</span>
+    </div>
+    <div class="page_facebook_icon">
+      <img src="./assets/facebook-icon.svg" alt="photo error!">
+      <span>Sign in with FB</span>
+    </div>
+    
+    </div><div class="page_orsign">
+      <div>
+        <p>____________</p>
+      </div>
+      <div> <span>or sign in with</span> </div>
+      <div>
+        <p>____________</p>
+      </div>
+    </div>
+    <div class="users_input">
+      <label for="">Username</label>
+      <input [(ngModel)]="username" name="username" Placeholder="Username" type="text" required>
+    </div>
+    <div class="password_input">
+      <label for="">Password</label>
+      <input [(ngModel)]="password" name="password" Placeholder="Password" type="text"  required>
+    </div>
+    <div class="checkbox_form">
+      <mat-checkbox class="example-margin">Remember this Device
+      </mat-checkbox>
+      <a>Forgot Password?</a>
+    </div>
+    <div class="buttons_form">
+      <button (click)="onSubmit()">Sign in</button>
+    </div>
+    <div class="texts_form">
+ <p>New to Spike? <a>Create an account</a> </p>
     </div>
   </form>
-</div>
-<div class="main" *ngIf="mains">
+</div>*ngIf="authen.isLoggedin()"  -->
+<div class="main">
   <app-sidenav></app-sidenav>
   <mat-toolbar>
     <div>
@@ -19,18 +53,23 @@
       </div>
       <div class="button_img_page">
         <button>Upgrade to Pro</button>
-        <img (click)="knop()" src="./assets/user-1.jpg" alt="photo error!">
+        <!-- (click)="knop()" -->
+        <img mat-button [matMenuTriggerFor]="menus" #menuTrigger src="./assets/user-1.jpg" alt="photo error!">
       </div>
     </div>
   </mat-toolbar>
-  <div class="profil" *ngIf="expresion">
-    <div class="lists">
-      <ul>
-        <li (click)="knop()"> <mat-icon>person</mat-icon> <span>My Profile</span></li>
-        <li (click)="knop()"> <mat-icon>system_update_alt</mat-icon> <span>My Account</span></li>
-        <li (click)="knop()"> <mat-icon>playlist_add</mat-icon> <span>My Task</span></li>
-      </ul>
-      <button>Logout</button>
+  <mat-menu #menus="matMenu">
+    <div class="profil">
+      <div class="lists">
+        <ul>
+
+          <li> <mat-icon>person</mat-icon> <span>My Profile</span></li>
+          <li> <mat-icon>system_update_alt</mat-icon> <span>My Account</span></li>
+          <li><mat-icon>playlist_add</mat-icon> <span>My Task</span></li>
+        </ul>
+        <button (click)="logout()">Logout</button>
+      </div>
     </div>
-  </div>
+  </mat-menu>
+  <router-outlet></router-outlet>
 </div>

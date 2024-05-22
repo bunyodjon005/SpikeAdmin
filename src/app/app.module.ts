@@ -8,8 +8,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardscomComponent } from './dashboardscom/dashboardscom.component';
-import { MatDialogConfig } from '@angular/material/dialog';
 import { MatDialogModule } from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,13 @@ import { MatDialogModule } from '@angular/material/dialog';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+NgxChartsModule,
+
+
+
+    
     
   ],
   providers: [],

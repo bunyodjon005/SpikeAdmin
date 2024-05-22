@@ -7,3 +7,4 @@ export class JWT2Service {
 
   constructor() { }
 }
+  // "scripts": []

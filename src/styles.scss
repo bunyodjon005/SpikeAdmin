@@ -6,7 +6,9 @@
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 :root {
+    --font-familys: "Lora", serif;
     --text-color: #f5f5f5;
     --hover-color: #12f7ff;
     --bg-color: #250821;

@@ -6,7 +6,7 @@
         <ul>
             <li class="homes"> HOME</li>
             <div></div>
-            <li class="dashboards ">
+            <li class="dashboards" routerLink="dashboards">
                 <mat-icon>dashboard</mat-icon> <span>Dashboard</span>
             </li>
             <li class="uii">UI Componenets</li>
@@ -18,13 +18,13 @@
         </ul>
         <ul>
             <li class="auth">AUTH</li>
-            <li class="chips"> <mat-icon>lock</mat-icon> <span>Login</span></li>
+            <li (click)="logout()" class="chips"> <mat-icon>lock</mat-icon> <span>Login</span></li>
             <li class="chips"> <mat-icon>person_add</mat-icon> <span>Register</span></li>
             <li class="auth">EXTRA</li>
             <li class="chips"> <mat-icon>sentiment_satisfied</mat-icon> <span>Icons</span></li>
             <li class="chips"> <mat-icon>cyclone</mat-icon> <span>Simple</span></li>
         </ul>
-   <div class="page_button">  <button>Upgrade To Pro</button></div>
+   <div class="page_button">  <button class="upgrade">Upgrade To Pro</button></div>
       
     
     </div>
