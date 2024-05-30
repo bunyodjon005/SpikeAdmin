@@ -11,13 +11,17 @@ import { DashboardscomComponent } from './dashboardscom/dashboardscom.component'
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { BadgeComponent } from './badge/badge.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     SidenavComponent,
-    DashboardscomComponent
+    DashboardscomComponent,
+    BadgeComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -27,6 +31,8 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     MatDialogModule,
     FormsModule,
 NgxChartsModule,
+
+
 
 
 

@@ -1,6 +1,6 @@
 <div class="main">
   <div class="felx_content">
-   <div class="charts">
+    <div class="charts">
       <div class="profit">
         <h2>Profit & Expenses</h2>
         <button class="matmenu" mat-button [matMenuTriggerFor]="beforeMenu"><mat-icon>more_vert</mat-icon></button>
@@ -9,10 +9,8 @@
           <button mat-menu-item>Anoter Action</button>
           <button mat-menu-item>Something else here</button>
         </mat-menu>
-
-      </div>
-
-      <ngx-charts-bar-vertical class="ngxx" [view]="view" [showYAxisLabel]="showYAxislabel" [gradient]="gradient"
+        </div>
+       <ngx-charts-bar-vertical class="ngxx" [view]="view" [showYAxisLabel]="showYAxislabel" [gradient]="gradient"
         [xAxis]="xAxis" [results]="productSales" [animations]="animations" [showGridLines]="showGridLines"
         [roundEdges]="roundEdges" [tooltipDisabled]="tooltipDisabled" [legendTitle]="legendTitle" [legend]="legend"
         [yAxis]="yAxislabel" [xAxis]="xAxislabel" [showXAxisLabel]="showXAxislabel" [showGridLines]="showGridLines"
@@ -58,26 +56,347 @@
           <div class="pages_rights">
             <h4>Product Sales</h4>
           </div>
-         <div class="page_lefts">
-          <div class="dollarslogo">
-            <mat-icon>attach_money</mat-icon>
+          <div class="page_lefts">
+            <div class="dollarslogo">
+              <mat-icon>attach_money</mat-icon>
+            </div>
           </div>
-         </div></div>
-         <div class="pages_dollars">
+        </div>
+        <div class="pages_dollars">
           <h5>$6,820</h5>
-         </div>
-<div class="pages_ends">
-  <div class="south">
-<mat-icon>south_east</mat-icon>
-  </div>
-  <span>+9%
-    last year</span>
-</div>
+        </div>
+        <div class="pages_ends">
+          <div class="south">
+            <mat-icon>south_east</mat-icon>
+          </div>
+          <span>+9%
+            last year</span>
+        </div>
 
-
-
+        <ngx-charts-area-chart-normalized [view]="views" [results]="multi" [legend]="legends"
+          [showXAxisLabel]="showXAxisLabels" [showYAxisLabel]="showYAxisLabels" [xAxis]="xAxis" [yAxis]="yAxis"
+          [xAxisLabel]="xAxisLabels" [yAxisLabel]="yAxisLabels" [timeline]="timeline" [results]="multi"
+          (select)="onSelect($events)">
+        </ngx-charts-area-chart-normalized>
       </div>
     </div>
   </div>
+  <div class="flex_content_2">
+    <div class="flex_pages_right">
+      <div class="flex_pages_titles">
+        <h3>Upcoming Schedules</h3>
+      </div>
+      <div class="flex_pages_texts">
+        <div class="flex_pages_texts-title">
+          <h5>09.30 am</h5>
+        </div>
+        <div class="flex_pages_steppers">
+          <div class="v-stepper">
+            <div class=" item-circle-1"></div>
+            <span class="line"></span>
+          </div>
 
+        </div>
+        <div class="flex_pages_texts_left">
+          <div class="payment">
+            <h5>Payment received from John</h5>
+          </div>
+          <div class="doe">
+            <h5>Doe of $385.90</h5>
+          </div>
+        </div>
+      </div>
+      <div class="flex_pages_texts">
+        <div class="flex_pages_texts-title">
+          <h5>09.30 am</h5>
+        </div>
+        <div class="flex_pages_steppers">
+          <div class="v-stepper">
+            <div class=" item-circle-2 "></div>
+            <span class="line"></span>
+          </div>
+
+        </div>
+        <div class="flex_pages_texts_left">
+          <div class="payment">
+            <h5>Payment received from John</h5>
+          </div>
+          <div class="doe">
+            <a href="#">
+              <h5>#ML-3467</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex_pages_texts">
+        <div class="flex_pages_texts-title">
+          <h5>09.30 am</h5>
+        </div>
+        <div class="flex_pages_steppers">
+          <div class="v-stepper">
+            <div class=" item-circle-3"></div>
+            <span class="line"></span>
+          </div>
+
+        </div>
+        <div class="flex_pages_texts_left">
+          <div class="payment">
+            <h5>New sale recorded</h5>
+          </div>
+          <div class="doe">
+            <h5>to Michael</h5>
+          </div>
+        </div>
+      </div>
+      <div class="flex_pages_texts">
+        <div class="flex_pages_texts-title">
+          <h5>09.30 am</h5>
+        </div>
+        <div class="flex_pages_steppers">
+          <div class="v-stepper">
+            <div class="item-circle-4"></div>
+            <span class="line"></span>
+          </div>
+
+        </div>
+        <div class="flex_pages_texts_left">
+          <div class="payment">
+            <h5>New sale recorded</h5>
+          </div>
+          <div class="doe">
+
+            <a>
+              <h5>#ML-3467</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex_pages_texts">
+        <div class="flex_pages_texts-title">
+          <h5>09.30 am</h5>
+        </div>
+        <div class="flex_pages_steppers">
+          <div class="v-stepper">
+            <div class=" item-circle-5"></div>
+            <span class="line"></span>
+          </div>
+
+        </div>
+        <div class="flex_pages_texts_left">
+          <div class="payment">
+
+            <a href="#">
+              <h5>#ML-3467</h5>
+            </a>
+          </div>
+          <div class="doe">
+            <h5>Doe of $385.90</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex_pages_left">
+      <div class="flex_pages_lefts_title">
+        <h2>Top Paying Clients</h2>
+      </div>
+      <div class="flex_left_table">
+        <table>
+          <thead>
+            <tr>
+              <td class="profiles">Profile</td>
+              <td class="hour">Hour Rate</td>
+              <td class="extra">Extra classes</td>
+              <td class="status">Status</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mark">
+                <div class="user1">
+                  <img src="./assets/user-1.jpg" alt="photo error!">
+                </div>
+                <div class="mark-texts">
+                  <span>
+                    Mark J. Freeman
+                  </span>
+                  <p>Prof. English</p>
+                </div>
+
+              </td>
+              <td>
+                <p>$150/hour</p>
+              </td>
+              <td class="text_sucess">
+                <p>+ 53</p>
+              </td>
+              <td class="item-light_sucess-1">
+
+                <span>Available</span>
+
+              </td>
+            </tr>
+            <tr>
+              <td class="mark">
+                <div class="user1">
+                  <img src="./assets/user-2.jpg" alt="photo error!">
+                </div>
+                <div class="mark-texts">
+                  <span>
+                    Andrew McDownland
+                  </span>
+                  <p>Prof. Project Manager</p>
+                </div>
+
+              </td>
+              <td>
+                <p>$150/hour</p>
+              </td>
+              <td class="text_sucess">
+                <p>+ 68</p>
+              </td>
+              <td class=" item-light_succes-2">
+
+                <span>In Class</span>
+
+              </td>
+            </tr>
+            <tr>
+              <td class="mark">
+                <div class="user1">
+                  <img src="./assets/user-3.jpg" alt="photo error!">
+                </div>
+                <div class="mark-texts">
+                  <span>
+                    Christopher Jamil
+
+                  </span>
+                  <p> Prof. Project Manager</p>
+                </div>
+
+              </td>
+              <td>
+                <p>$150/hour</p>
+              </td>
+              <td class="text_sucess">
+                <p>+ 94</p>
+              </td>
+              <td class="item-light_sucess-3">
+
+                <span>Absent</span>
+
+              </td>
+            </tr>
+            <tr>
+              <td class="mark">
+                <div class="user1">
+                  <img src="./assets/user-4.jpg" alt="photo error!">
+                </div>
+                <div class="mark-texts">
+                  <span>
+                    Nirav Joshi
+
+                  </span>
+                  <p> Prof. Frontend Engineer</p>
+                </div>
+
+              </td>
+              <td>
+                <p>$150/hour</p>
+              </td>
+              <td class="text_sucess">
+                <p>+ 94</p>
+              </td>
+              <td class="item-light_sucess-4">
+
+                <span>OnLeave</span>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="flex_content-3">
+    <div class="item-1-flexss">
+     <div class="items-1_buttons">
+      <button> <span></span></button>
+     </div>
+     <div class="items-1_titless">
+      <h5>Boat Headphone</h5>
+     </div>
+     <div class="items-1_texts">
+      <p>$285
+       <del> $375</del>
+        </p>
+        &nbsp;&nbsp;&nbsp;
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+     </div>
+    </div>
+    <div class="item-2-flexss">
+      <div class="items-1_buttons">
+       <button> <span></span></button>
+      </div>
+      <div class="items-1_titless">
+       <h5>MacBook Air Pro</h5>
+      </div>
+      <div class="items-1_texts">
+       <p>$285
+       
+        <del> $375</del>
+         </p>
+         &nbsp;&nbsp;&nbsp;
+         <mat-icon>star</mat-icon>
+         <mat-icon>star</mat-icon>
+         <mat-icon>star</mat-icon>
+         <mat-icon>star</mat-icon>
+         <mat-icon>star</mat-icon>
+      </div>
+     </div>
+     <div class="item-3-flexss">
+      <div class="items-1_buttons">
+       <button> <span></span></button>
+      </div>
+      <div class="items-1_titless">
+       <h5>Red Valvet Dress</h5>
+      </div>
+      <div class="items-1_texts">
+       <p>$285
+        <del> $375</del>
+         </p>
+         &nbsp;&nbsp;&nbsp;
+         <mat-icon>star</mat-icon>
+         <mat-icon>star</mat-icon>
+         <mat-icon>star</mat-icon>
+         <mat-icon>star</mat-icon>
+         <mat-icon>star</mat-icon>
+      </div>
+     </div>
+     <div class="item-4-flexss">
+      <div class="items-1_buttons">
+       <button> <span></span></button>
+      </div>
+      <div class="items-1_titless">
+       <h5>Cute Soft Teddybear</h5>
+      </div>
+      <div class="items-1_texts">
+       <p>$285
+        <del> $375</del>
+         </p>
+         &nbsp;&nbsp;&nbsp;
+         <mat-icon>star</mat-icon>
+         <mat-icon>star</mat-icon>
+         <mat-icon>star</mat-icon>
+         <mat-icon>star</mat-icon>
+         <mat-icon>star</mat-icon>
+      </div>
+     </div>
+    
+    
+
+  </div>
 </div>

@@ -1,6 +1,6 @@
 
 .sidenav {
-    position:fixed;
+position: fixed;
     width:270px;
     padding-right:24px;
     padding-left: 24px;
@@ -8,15 +8,14 @@
     left:0;
      height: 96%;
     background-color: #fff;
-    margin: 15px ;
+    // margin: 15px ;
     margin-top: 15px;
     margin-left: 25px;
     border-radius:  16px;
     box-shadow: 1px 1px 1px 1px  #f0f5f9;
+     border: 1px solid #e5eaef;
     overflow: auto;
-    border: 1px solid #e5eaef;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+
 }
 .svg_page {
     width: 200px;

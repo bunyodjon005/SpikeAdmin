@@ -1,8 +1,10 @@
 .main {
     width: 100%;
-    min-height: 100vh;
+    min-height:160vh;
     max-height: 900vh;
     background-color: #f0f5f9;
+
+
     // position: fixed;
 }
 
@@ -11,6 +13,7 @@ mat-toolbar {
     // position: fixed;
     justify-content: end;
     min-width: 100%;
+   
 }
 
 .menu {
@@ -24,6 +27,7 @@ mat-toolbar > div {
     margin-top: 20px;
     height: 72px;
     margin-top: 30px;
+  box-shadow: 1px 1px 1px 1px  #f0f5f9;
     border: 1px solid #e5eaef;
     border-radius: 20px;
     display: flex;
@@ -47,11 +51,11 @@ mat-toolbar > div {
 }
 
 
-app-sidenav {
-    position: static;
-    min-height: 400vh;
+// app-sidenav {
+//     position: static;
+//     // min-height: 400vh;
 
-}
+// }
 
 .icon mat-icon {
     color: blue;
@@ -383,6 +387,9 @@ form {
     //     right: 440px;
 
     // }
+    .main {
+        min-height: 310vh;
+    }
 }
 
 @media only screen and (max-width:1013px) {

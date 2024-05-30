@@ -23,6 +23,7 @@ onSubmit():void{
   if(this.username,this.password){
     if(this.authen.Jwtapilogin(this.username,this.password)){
       console.log("Tizimga user kirdi!");
+  
     }
     else {
       console.log("Xatolik");
