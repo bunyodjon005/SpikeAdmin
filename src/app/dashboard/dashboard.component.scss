@@ -1,6 +1,6 @@
 .main {
     width: 100%;
-    min-height:160vh;
+    min-height:110vh;
     max-height: 900vh;
     background-color: #f0f5f9;
 
@@ -12,7 +12,7 @@ mat-toolbar {
     display: flex;
     // position: fixed;
     justify-content: end;
-    min-width: 100%;
+    width: 100%;
    
 }
 
@@ -41,7 +41,7 @@ mat-toolbar > div {
         width: 900px;
         min-width: 100px;
     }
-
+ 
     // .profil {
     //     margin-left: 20px;
     //     position: relative;
@@ -49,7 +49,11 @@ mat-toolbar > div {
 
     // }
 }
-
+@media only screen and (max-width:1280px){
+    .main {
+        min-height:130vh;
+    }
+}
 
 // app-sidenav {
 //     position: static;
@@ -104,7 +108,7 @@ mat-toolbar > div {
 
     display: flex;
     // margin-left: 1300px;
-    margin-top: 20px;
+    
     text-align: center;
     position: relative;
 
@@ -172,6 +176,7 @@ mat-toolbar > div {
     justify-content: center;
     align-items: center;
 }
+
 
 form {
     border-radius: 10px;
@@ -388,7 +393,7 @@ form {
 
     // }
     .main {
-        min-height: 310vh;
+        min-height: auto;
     }
 }
 
@@ -438,6 +443,9 @@ form {
 
     mat-toolbar > div {
         width: 800px;
+    }
+    .main {
+        height: auto;
     }
 
     // .profil {

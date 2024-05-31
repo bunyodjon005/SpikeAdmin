@@ -6,7 +6,7 @@
 .felx_content {
     display: flex;
     justify-content: end;
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 10px;
 
 }
@@ -358,6 +358,7 @@ mat-progress-spinner {
 .flex_pages_texts_left .doe h5 {
     font-weight: 500;
     color: black;
+    margin-left: 10px;
     font-size: 0.90rem;
 }
 
@@ -695,6 +696,9 @@ max-width:400px;
         max-width: 450px;
         margin-left: 360px;
     }
+    .flex_content-3 {
+        margin-left: 400px;
+    }
 }
 
 @media only screen and (max-width:1000px) {
@@ -734,6 +738,10 @@ max-width:400px;
     }
     .flex_content_2 {
         justify-content: center;
+}
+.flex_content-3 {
+    justify-content: center;
+  
 }
 }
 @media only screen and (max-width:810px){

@@ -12,7 +12,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BadgeComponent } from './badge/badge.component';
-
+import {MatBadgeModule} from '@angular/material/badge';
+import { ChipsComponent } from './chips/chips.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { BadgeComponent } from './badge/badge.component';
     SidenavComponent,
     DashboardscomComponent,
     BadgeComponent,
+    ChipsComponent,
 
   ],
   imports: [
@@ -31,7 +33,7 @@ import { BadgeComponent } from './badge/badge.component';
     MatDialogModule,
     FormsModule,
 NgxChartsModule,
-
+MatBadgeModule
 
 
 

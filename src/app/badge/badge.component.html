@@ -1,1 +1,48 @@
-<div class="main"></div>
+<div class="mains">
+    <div class="pages">
+        <div class="pages_title"> 
+    <h2>Badges</h2></div>
+    <div class="pages_contents"><div class="pages_content">
+        <div matBadge="4" matBadgeOverlap="false" class="demo-section"> Text with a badge</div>
+
+    </div>
+    
+ </div><div class="pages_contents">
+        <div class="pages_content">
+            <div matBadge="4" matBadgeSize="large" class="demo-section">Text with large badge</div>
+        </div>
+    </div>
+    <div class="pages_contents">
+        <div class="pages_content-2">
+            <div class="demo-section">
+                Button with a badge on the left
+                <button class="mat-raised" mat-raised-button color="primary"
+                    matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+                  Action
+                </button>
+              </div>
+        </div>
+    </div>
+    <div class="pages_contents">
+        <div class="pages_content-2">
+            <div class="demo-section">
+                Icon with a home
+                <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+              
+                </div>
+        </div>
+    </div>
+    <div class="pages_contents">
+        <div class="pages_content-2">
+            <div class="demo-section">
+                Button toggles badge visibility
+                <button mat-raised-button matBadge="7" color="primary" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">
+                    Hide
+                </button>
+              </div>
+        </div>
+    </div>
+  
+    </div>
+</div>
+<br>
