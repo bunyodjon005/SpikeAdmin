@@ -14,6 +14,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BadgeComponent } from './badge/badge.component';
 import {MatBadgeModule} from '@angular/material/badge';
 import { ChipsComponent } from './chips/chips.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ChipsComponent } from './chips/chips.component';
     DashboardscomComponent,
     BadgeComponent,
     ChipsComponent,
+    ListComponent,
 
   ],
   imports: [

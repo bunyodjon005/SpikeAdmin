@@ -1,1 +1,111 @@
-<div class="main"></div>
+<div class="main">
+    <div class="pages">
+        <div class="chips">
+<h2>Chips</h2>
+        </div>
+        <div class="flex_content-1">
+            <div class="item-flex-1">
+                <div class="item-top">
+                  <h2>Basic</h2>  
+                </div>
+                <div class="item-bottom">
+                    <mat-chip-listbox aria-label="Fish selection">
+                        <mat-chip-option>One fish</mat-chip-option>
+                        <mat-chip-option>Two fish</mat-chip-option>
+                        <mat-chip-option color="accent" selected>Accent fish</mat-chip-option>
+                        <mat-chip-option color="warn">Warn fish</mat-chip-option>
+                      </mat-chip-listbox>
+                </div>
+            </div>
+            <div class="item-flex-1">
+                <div class="item-top">
+                  <h2>Avatar</h2>  
+                </div>
+                <div class="item-bottom">
+                    <mat-chip-listbox aria-label="Dog selection">
+                        <mat-chip>
+                          <img matChipAvatar src="./assets/user-1.jpg" alt="Photo of a Shiba Inu"/>
+              Anderson
+                        </mat-chip>
+                        <mat-chip color="primary">
+                          <img matChipAvatar src="./assets/user-2.jpg" alt="Photo of a Shiba Inu"/>
+                          Monty
+                        </mat-chip>
+                        <mat-chip color="accent">
+                          <img matChipAvatar src="./assets/user-3.jpg" alt="Photo of a Shiba Inu"/>
+                          Mathew
+                        </mat-chip>
+                      </mat-chip-listbox>
+                </div>
+            </div>
+           
+        </div>
+        <div class="flex_content-2">
+          <div class="item-flex-1">
+            <div class="item-top">
+              <h2>Drag n Drop</h2>  
+            </div>
+            <div class="item-bottom">
+             <div class="items_flexs">
+              <div class="apple">
+                <span>apple</span>
+              </div>
+              <div class="apple">
+                <span>bananna</span>
+              </div>
+              <div class="apple">
+                <span>strawberry</span>
+              </div>
+              <div class="apple">
+                <span>orange</span>
+              </div>
+              <div class="apple">
+                <span>kiwi</span>
+              </div>
+              <div class="apple">
+                <span>cherry</span>
+              </div>
+              
+             </div>
+            </div>
+        </div>
+        <div class="item-flex-1">
+            <div class="item-top">
+              <h2>Stacked</h2>
+            </div>
+            <div class="item-bottom">
+              <mat-chip-listbox class="mat-mdc-chip-set-stacked mat-chipss" aria-label="Color selection">
+                <mat-chip-option *ngFor="let chip of availableColors" selected [color]="chip.color">
+                  {{chip.name}}
+                </mat-chip-option>
+              </mat-chip-listbox>
+            </div>
+        </div>
+        </div>
+        <div class="flex_content-3">
+          <div class="item-flex-3">
+            <mat-form-field class="example-chip-list">
+              <mat-label>Favorite Fruits</mat-label>
+              <mat-chip-grid #chipGrid aria-label="Enter fruits">
+                <mat-chip-row *ngFor="let fruit of fruits"
+                              (removed)="remove(fruit)"
+                              [editable]="true"
+                              (edited)="edit(fruit, $event)"
+                              [aria-description]="'press enter to edit ' + fruit.name">
+                  {{fruit.name}}
+                  <button matChipRemove [attr.aria-label]="'remove ' + fruit.name">
+                    <mat-icon>cancel</mat-icon>
+                  </button>
+                </mat-chip-row>
+                <input placeholder="New fruit..."
+                       [matChipInputFor]="chipGrid"
+                       [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                       [matChipInputAddOnBlur]="addOnBlur"
+                       (matChipInputTokenEnd)="add($event)"/>
+              </mat-chip-grid>
+            </mat-form-field>
+          </div>
+        </div>
+    </div>
+  
+</div>  <br> <br>

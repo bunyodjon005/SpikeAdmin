@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardscomComponent } from './dashboardscom/dashboardscom.component';
 import { BadgeComponent } from './badge/badge.component';
+import { ChipsComponent } from './chips/chips.component';
 
 const routes: Routes = [
   // {path:'dashboard',component:DashboardComponent},
@@ -11,7 +12,9 @@ const routes: Routes = [
   //   pathMatch:'full'
   // },
   {path:'dashboards',component:DashboardscomComponent},
-  {path:'badge',component:BadgeComponent}
+  {path:'badge',component:BadgeComponent},
+  {path:'chips',component:ChipsComponent}
+  
 ];
 
 @NgModule({

@@ -1,0 +1,222 @@
+.main {
+    margin-top: 40px;
+    display: flex;
+    justify-content: end;
+}
+.pages{
+    min-width:120px;
+    border-radius:16px;
+      width:1190px;
+    height:660px;
+    background-color:#fff; 
+    margin-right:15px;
+    box-shadow: 1px 1px 1px 1px  #f0f5f9;
+    border: 1px solid #e5eaef;
+}
+.chips {
+    margin-top: 10px;
+    display:flex;
+    justify-content:start;
+    align-items:center;
+    border-bottom: 2px solid #f0f5f9;
+}
+.chips h2 {
+    margin:8px;
+    margin-left: 15px;
+    font-weight: 400;
+    color: black;
+    font-size: 1.3rem;
+}
+.flex_content-1 {
+    display:flex;
+    margin-top:20px;
+    justify-content:space-evenly;
+    align-items:center;
+}
+        
+.flex_content-1 .item-flex-1 {
+    min-width:100px;
+    width:550px;
+    height:140px;
+   border:2px solid #f0f5f9;
+    border-radius:18px;
+}
+.flex_content-1 .item-flex-1 .item-bottom {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.item-top h2 {
+    margin:10px;
+    margin-left:16px;
+}
+.item-top  {
+    border-bottom: 2px solid #f0f5f9;
+}
+.flex_content-2{
+    display:flex;
+    margin-top:20px;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.items_flexs {
+    display:flex;
+}
+.flex_content-2 .item-flex-1 {
+    min-width:100px;
+    width:580px;
+    height:220px;
+   border:2px solid #f0f5f9;
+    border-radius:18px;
+   
+}
+
+.item-flex-1 .item-top {
+    border-bottom: 2px solid #f0f5f9;
+}
+.flex_content-2 .item-flex-1 .item-bottom {
+     display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.apple {
+    margin:10px;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:auto;
+    height:40px;
+    padding:10px;
+    border-radius:100px;
+    background-color:#b0abac;
+}
+.apple:active{
+    opacity:0.5;
+}
+.mat-chipss {
+    width:300px;
+}
+.flex_content-3 {
+    display:flex;
+    margin-top:40px;
+    justify-content:center;
+    align-items:center;
+}
+.flex_content-3 .item-flex-3 {
+    min-width:100px;
+    width:1120px;
+    height:120px;
+   border:2px solid #f0f5f9;
+    border-radius:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.example-chip-list {
+    width: 90%;
+   
+  }
+// Responsive Design 
+@media only screen and (max-width:1280px){
+    .main {
+        justify-content:end;
+    
+    }
+    .pages{
+        width:820px;
+        height:1740px;
+        padding:10px;
+
+    }
+    .flex_content-1  {
+        flex-direction:column;
+        display: flex;
+    }
+    .flex_content-2 {
+        display: flex;
+        flex-direction:column;
+        justify-content: none;
+    }
+    .item-flex-1  {
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width:1148px){
+.pages{
+    width:720px;
+}
+}
+@media only screen and (max-width:1082px){
+ 
+    .pages{
+        width:620px;
+       
+    }
+}
+@media only screen and (max-width:1000px){
+    .pages{
+        width:580px;
+    }
+}
+@media only screen and (max-width:880px){
+    .pages{
+        width:520px;
+
+    }
+    .flex_content-1 .item-flex-1 {
+        width: 320px;
+        min-width:100px;
+    }
+    .flex_content-1 .item-flex-2 {
+        width: 320px;
+        min-width:100px;
+        height: auto;
+        padding:5px;
+       
+    }
+    
+    .flex_content-2 .item-flex-1 {
+        width: 320px;
+        min-width:100px;
+        height: auto;
+        padding:5px;
+      
+    }
+    .flex_content-1 .item-flex-1  {
+        height: 200px;
+        padding:5px;
+    }
+    .flex_content-2 .item-flex-1 {
+        height: 440px;
+        padding:5px;
+    }
+    .flex_content-2 .item-flex-1 .item-bottom .items_flexs {
+        flex-direction:column;
+        display: flex;
+    }
+    .example-chip-list{
+        width:60%
+    }
+    .flex_content-3 .item-flex-3 {
+        width:800px;
+        height:180px;
+    }
+}
+@media only screen and (max-width:834px){
+    .pages{
+        width:460px;
+    }
+}
+@media only screen and (max-width:803px){
+    .main {
+        justify-content:center;
+        padding:10px;
+    }
+    .pages{
+        width:520px;
+    }
+}
