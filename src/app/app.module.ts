@@ -15,6 +15,8 @@ import { BadgeComponent } from './badge/badge.component';
 import {MatBadgeModule} from '@angular/material/badge';
 import { ChipsComponent } from './chips/chips.component';
 import { ListComponent } from './list/list.component';
+import { MenuComponent } from './menu/menu.component';
+import { TooltipsComponent } from './tooltips/tooltips.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { ListComponent } from './list/list.component';
     BadgeComponent,
     ChipsComponent,
     ListComponent,
+    MenuComponent,
+    TooltipsComponent,
 
   ],
   imports: [

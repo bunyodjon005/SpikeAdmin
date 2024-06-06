@@ -1,1 +1,194 @@
-<div class="main"></div>
+<div class="main">
+    <div class="pages">
+        <div class="lists">
+            <h2>Lists</h2>
+        </div>
+        <div class="flex_content-1">
+            <div class="item-flex-1">
+             <div class="item-top">
+                <h2>Basic</h2>
+             </div>
+              <div class="item-bottom">
+                <mat-list role="list">
+                    <mat-list-item role="listitem">Item 1</mat-list-item>
+                    <mat-list-item role="listitem">Item 2</mat-list-item>
+                    <mat-list-item role="listitem">Item 3</mat-list-item>
+                  </mat-list>
+              </div>
+            </div>
+            <div class="item-flex-2">
+                <div class="item-top">
+                    <h2>Two line</h2>
+                </div>
+                <div class="item-bottom">
+                    <mat-list role="list">
+                        <mat-list-item role="listitem">Title <br>  Second line</mat-list-item>
+          
+                   
+                      </mat-list>
+                      <mat-list role="list">
+                        <mat-list-item role="listitem">Title <br> Second line</mat-list-item>
+                       
+                   
+                      </mat-list>
+                </div>
+            </div>
+        </div>
+        <div class="flex_content-2">
+<div class="item-flex-1 flexxsss">
+    <div class="item-top">
+        <h2>Three Line</h2>
+    </div>
+    <div class="item-bottom">
+        <div class="items_lists">
+            <div class="item-lists-1">
+                <ul>
+                    <li>Title</li>
+                    <li>Second line</li>
+                    <li>Third line</li>
+                </ul>
+             </div>
+            <div class="item-lists-2">
+               <ul>
+                <li>Title</li>
+                <li>Second line. This line will truncate.</li>
+                <li>Third line</li>
+                   </ul>
+       </div>
+        </div> </div>
+</div>
+<div class="item-flex-2">
+    <div class="item-top">
+        <h2>Three Line with Text wrapping</h2>
+    </div>
+    <div class="item-bottom">
+        <div class="items-lists">
+            <div class="item-lists-1">
+                <ul>
+                    <li> Title</li>
+                   <li>Secondary line that will wrap because the list lines is explicitly set to 3 </li>
+                   <li>lines. Text inside of a `matListItemTitle` or `matListItemLine` will never</li>
+
+                </ul>
+            </div>
+            <div class="item-lists-2">
+                <ul>
+                    <li> Title</li>
+                   <li>Secondary line that will wrap because the list lines is explicitly set to 3 </li>
+                   <li>lines. Text inside of a `matListItemTitle` or `matListItemLine` will never</li>
+
+                </ul>
+            </div>
+      
+        </div>
+
+    </div>
+</div>
+        </div>
+        <div class="flex_content-3">
+<div class="item-flex-1">
+    <div class="item-top">
+        <h2>List with Selection</h2>
+    </div>
+    <div class="item-bottom">
+        <mat-selection-list #shoes [multiple]="false">
+            <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe">
+              {{shoe}}
+            </mat-list-option>
+          </mat-selection-list>
+          <p class="options">
+            Options selected: {{shoes.selectedOptions.selected.length}}
+          </p>
+         
+          
+    </div>
+</div>
+<div class="item-flex-2">
+    <div class="item-top">
+        <h2>List with single Selection</h2>
+    </div>
+    <div class="item-bottom">
+        <mat-selection-list #shoes [multiple]="false">
+            <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe">
+              {{shoe}}
+            </mat-list-option>
+          </mat-selection-list>
+          <p class="options">
+            Options selected: {{shoes.selectedOptions.selected.length}}
+          </p>
+    </div>
+</div>
+        </div>
+        <div class="flex_content-4">
+            <div class="item-flex-1">
+                <div class="item-top">
+                   <h2>List with sections</h2>
+                </div>
+                <div class="item-center"> <div class="foldersss">  <div class="folders">
+                    <h2>Folders</h2></div>  <div class="flexss-itemss">
+                <div class="itemss-flexss-1">
+                    <h2>fo</h2>
+                 </div>
+                 <div class="photos">
+                    <h4>Photos</h4>
+                    <p>Jan 1, 2016</p>
+                 
+                </div>
+                </div>
+                <div class="flexss-itemss">
+                    <div class="itemss-flexss-1">
+                        <h2>fo</h2>
+                     </div>
+                     <div class="photos">
+                        <h4>Photos</h4>
+                        <p>Jan 1, 2016</p>
+                     
+                    </div>
+                    </div><div class="flexss-itemss">
+                        <div class="itemss-flexss-1">
+                            <h2>fo</h2>
+                         </div>
+                         <div class="photos">
+                            <h4>Photos</h4>
+                            <p>Jan 1, 2016</p>
+                         
+                        </div>
+                        </div></div></div>
+                        <div class="item-bottom">
+                            <div><div class="item-bottoms-titles">
+                                <h2>Notes</h2>
+                            </div>
+                            <div class="item-bottoms-texts">
+                                <div class="flexss-itemss">
+                                    <div class="itemss-flexss-1">
+                                        <h2>nc</h2>
+                                     </div>
+                                     <div class="photos">
+                                        <h5>Vacation Itinerary</h5>
+                                        <p>Feb 20,2016</p>
+                                     
+                                    </div>
+                                    </div>
+                                    <div class="flexss-itemss">
+                                        <div class="itemss-flexss-1">
+                                            <h2>nc</h2>
+                                         </div>
+                                         <div class="photos">
+                                            <h5>Vacation Itinerary</h5>
+                                            <p>Feb 20,2016</p>
+                                         
+                                        </div>
+                                        </div>
+                                        
+
+                            </div></div>
+                            
+                        </div>
+          
+                 
+              
+            </div>
+        </div>
+    </div>
+   
+</div> <br><br>

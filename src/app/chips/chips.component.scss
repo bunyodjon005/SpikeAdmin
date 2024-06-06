@@ -2,6 +2,7 @@
     margin-top: 40px;
     display: flex;
     justify-content: end;
+   
 }
 .pages{
     min-width:120px;
@@ -214,7 +215,7 @@
 @media only screen and (max-width:803px){
     .main {
         justify-content:center;
-        padding:10px;
+   
     }
     .pages{
         width:520px;
