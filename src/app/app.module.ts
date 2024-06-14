@@ -17,6 +17,11 @@ import { ChipsComponent } from './chips/chips.component';
 import { ListComponent } from './list/list.component';
 import { MenuComponent } from './menu/menu.component';
 import { TooltipsComponent } from './tooltips/tooltips.component';
+import { RegisterComponent } from './register/register.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
+
 
 @NgModule({
   declarations: [
@@ -29,6 +34,10 @@ import { TooltipsComponent } from './tooltips/tooltips.component';
     ListComponent,
     MenuComponent,
     TooltipsComponent,
+    RegisterComponent,
+
+
+   
 
   ],
   imports: [
@@ -39,7 +48,8 @@ import { TooltipsComponent } from './tooltips/tooltips.component';
     MatDialogModule,
     FormsModule,
 NgxChartsModule,
-MatBadgeModule
+MatBadgeModule,
+HttpClientModule
 
 
 

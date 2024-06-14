@@ -1,0 +1,48 @@
+<div class="mains" >
+    <form action="">
+      <div class="form_img">
+        <img src="./assets/dark-logo.svg" alt="photo error!">
+      </div>
+      <div class="page_buttons">
+      <div class="page_google_icon">
+        <img src="./assets/google-icon.svg" alt="photo error!">
+        <span>Signin with Google</span>
+      </div>
+      <div class="page_facebook_icon">
+        <img src="./assets/facebook-icon.svg" alt="photo error!">
+        <span>Sign in with FB</span>
+      </div>
+      
+      </div><div class="page_orsign">
+        <div>
+          <p>____________</p>
+        </div>
+        <div> <span>or sign in with</span> </div>
+        <div>
+          <p>____________</p>
+        </div>
+      </div>
+      <div class="users_input">
+        <label for="">Username</label>
+        <input [(ngModel)]="username" name="username" [ngModelOptions]="{standalone:true}" >
+      </div>
+      <div class="password_input">
+        <label for="">Email Address</label>
+        <input [(ngModel)]="email" name="email" [ngModelOptions]="{standalone:true}" >
+      </div>
+      <div class="password_input">
+        <label for="">Password</label>
+        <input [(ngModel)]="password" name="password" [ngModelOptions]="{standalone:true}" >
+      </div>
+      <div class="checkbox_form">
+        <mat-checkbox class="example-margin">Remember this Device
+        </mat-checkbox>
+        <a>Forgot Password?</a>
+      </div>
+      <div class="buttons_form">
+        <button (click)="save()" >Sign in</button>
+      </div>
+      <div class="texts_form">
+   <p>New to Spike? <a>Create an account</a> </p>
+      </div>
+    </form>

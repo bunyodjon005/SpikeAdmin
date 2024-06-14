@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NgxServiceService } from './ngx';
+
 
 describe('NgxServiceService', () => {
   let service: NgxServiceService;

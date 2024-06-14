@@ -1,0 +1,47 @@
+.main{
+    margin-top: 40px;
+      display: flex;
+      justify-content: end;
+  
+  
+    
+  }
+  .page{
+  min-width:120px;
+      border-radius:16px;
+        width:1190px;
+      height:740px;
+      background-color:#fff; 
+      margin-right:15px;
+      box-shadow: 1px 1px 1px 1px  #f0f5f9;
+      border: 1px solid #e5eaef;
+  }
+  .pages_title {
+    margin-top: 10px;
+    display:flex;
+    justify-content:start;
+    align-items:center;
+
+}
+.pages_title h2 {
+    margin:5px;
+    margin-left: 15px;
+    font-weight: 400;
+    color: black;
+    font-size: 1.3rem;
+}
+.pages_titles h4 {
+    font-size:1rem;
+    font-weight:400;
+    color:black;
+    margin-left:25px;
+    margin:5px;
+
+}
+.pages_titles {
+   
+    display:flex;
+    justify-content:start;
+    align-items:center;
+
+}

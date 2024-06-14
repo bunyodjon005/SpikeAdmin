@@ -72,6 +72,225 @@
     justify-content: center;
     align-items: center;
 }
-.item-bottom button {
+ .flex_content-1 div > .item-bottom button {
     margin:12px;
+    border-radius:50px;
 }
+.flex_content-2 {
+    display:flex;
+    margin-top:20px;
+    justify-content:space-evenly;
+    align-items:center;
+    
+}
+.flex_content-2 .item-flex-1 {
+    min-width:100px;
+    width:530px;
+    height:150px;
+   border:2px solid #f0f5f9;
+    border-radius:18px;
+}
+.flex_content-2 .item-flex-2 {
+    min-width:100px;
+    width:480px;
+    height:160px;
+   border:2px solid #f0f5f9;
+    border-radius:18px;
+}
+.flex_content-2 .item-flex-1  .item-bottom  {
+display:flex;
+align-items:center;
+justify-content:start;
+gap:18px;
+padding:8px;
+}
+.above {
+    color:#fff;
+    background-color:#0085db;
+    padding:10px;
+    border-radius:100px;
+    width:100px;
+}
+.below {
+    color:#fff;
+    background-color:#707a82;
+    padding:10px;
+    border-radius:100px;
+    width:100px;
+}
+.left {
+    color:#fff;
+    background-color:#fa896b;;
+    padding:10px;
+    border-radius:100px;
+    width:100px;
+}
+.right {
+    color:#fff;
+    background-color:#0085db;
+    padding:10px;
+    border-radius:100px;
+    width:100px;
+}
+
+.form-field {
+    margin-top:6px;
+    
+    margin:10px;
+}
+.forms-fields  {width:100px;
+
+}
+.buttons-primary {
+    color:#fff;
+    background-color:#0085db;
+    margin-right:10px;
+    padding:10px;
+    border-radius:100px;
+    width:40px;
+}
+.flex_content-3 {
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.flex_content-3 .item-flex-1 {
+    min-width:100px;
+margin-left:20px;
+    width:350px;
+    height:180px;
+   border:2px solid #f0f5f9;
+    border-radius:18px;
+}
+
+  .examplesss {
+    width: 100%;
+  }
+  // Responsive Design
+@media only screen and (max-width:1280px){
+    .main {
+        justify-content:end;
+    
+    }
+    .pages{
+        width:820px;
+        height: 1360px;
+        padding:10px;
+
+    }
+    .flex_content-1  {
+        flex-direction:column;
+        display: flex;
+    }
+    .flex_content-2 {
+        display: flex;
+        flex-direction:column;
+        justify-content: none;
+    }
+    .flex_content-3 {
+        display: flex;
+        flex-direction:column;
+        justify-content: none;
+    }
+    .item-flex-1  {
+        margin-top: 30px;
+    }
+    .item-flex-2  {
+        margin-top: 30px;
+    }
+    .flex_content-4 .item-flex-1 {
+        width: 900px;
+    }
+}
+@media only screen and (max-width:1148px){
+    .pages{
+        width:720px;
+    }
+    }
+    @media only screen and (max-width:1082px){
+     
+      .pages{
+        width:670px;
+        height:1340px;
+      }
+    }
+    @media only screen and (max-width:1000px){
+        .pages{
+            width:580px;
+        }
+    }
+    @media only screen and (max-width:899px){
+        .flex_content-1  {
+            flex-direction:
+            column;
+            display: flex;
+        }
+        .pages{
+            width:520px;height:1440px;
+            padding:10px;
+    
+        }
+        .flex_content-1 .item-flex-1 {
+            width: 320px;
+            min-width:100px;  height: 200px;
+            padding:5px;
+        }
+        .flex_content-1 .item-flex-2 {
+            width: 320px;
+            min-width:100px;
+            height: auto;
+            padding:5px;
+           
+        }
+        
+        .flex_content-2 .item-flex-1 {
+            width: 350px;
+            min-width:100px;
+            height: 240px;
+            padding:5px;
+            margin-top:10px;
+          
+        }
+       .flex_content-2 .item-flex-2 {
+        width:350px;
+       }
+     
+           
+      
+        .flex_content-2 .item-flex-1 .item-bottom .items_flexs {
+            flex-direction:column;
+            display: flex;
+        }
+        .example-chip-list{
+            width:60%
+        }
+        .flex_content-3 .item-flex-3 {
+            width:800px;
+            height:180px;
+            margin-left: 10px;
+        }
+   .options{
+                width: 60%;
+            min-width:60px;
+        }
+    }
+    @media only screen and (max-width:834px){
+        .pages{
+            width:460px;
+        }
+    }
+    @media only screen and (max-width:805px){
+        .main {
+            justify-content:center;
+
+        }
+        .pages{
+            width:630px;
+            margin-left: 8px;
+        }
+        .examplesss {
+            width: 60%;
+          }
+    }

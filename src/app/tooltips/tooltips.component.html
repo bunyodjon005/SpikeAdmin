@@ -9,7 +9,11 @@
                     <h2>Basic</h2>
                 </div>
                 <div class="item-bottom">
-                    <button mat-raised-button color="primary">Primary</button>
+                    <button mat-raised-button color="primary"  
+                    mat-raised-button
+                    matTooltip="Info about the action"
+                    [matTooltipPosition]="position.value!"
+                    aria-label="Button that displays a tooltip in various positions" >Primary</button>
                 </div>
             </div>
             <div class="item-flex-2">
@@ -17,7 +21,11 @@
                     <h2>Uppercase</h2>
                 </div>
                 <div class="item-bottom">
-                    <button mat-raised-button color="primary">Primary</button>
+                    <button mat-raised-button color="primary"  
+                    mat-raised-button
+                    matTooltip="Info about the action"
+                    [matTooltipPosition]="position.value!"
+                    aria-label="Button that displays a tooltip in various positions" >Primary</button>
                 </div>
             </div>
             <div class="item-flex-3">
@@ -25,8 +33,59 @@
                     <h2>Disabled on click</h2>
                 </div>
                 <div class="item-bottom">
-                    <button mat-raised-button color="primary">Primary</button>
+                    <button mat-raised-button
+                    matTooltip="Info about the action"
+                    [matTooltipPosition]="position.value!"
+                    aria-label="Button that displays a tooltip in various positions" mat-raised-button color="primary">Primary</button>
                     <mat-checkbox class="example-margin" [disabled]="false">Tooltip disabled</mat-checkbox>
+                </div>
+            </div>
+        </div>
+        <div class="flex_content-2">
+            <div class="item-flex-1">
+                <div class="item-top">
+<h2>Position</h2>
+                </div>
+                <div class="item-bottom">
+                    <button class="below" mat-button >Below</button>
+                    <button class="above" mat-button >Above</button>
+                    <button class="left" mat-button >Left</button>
+                    <button class="right" mat-button >Right</button>
+                </div>
+            </div>
+            <div class="item-flex-2">
+                <div class="item-top">
+                    <h2>Show and Hide</h2>
+                </div>
+                <div class="item-bottom">
+                    <div class="form-field"> <mat-form-field class=" forms-fields example-full-width">
+                        <mat-label>Show DELAY</mat-label>
+                        <input matInput type="number" value='1000'>
+                         </mat-form-field>
+                           </div>
+                           <div class="form-field"> <mat-form-field class="forms-fields  example-full-width">
+                            <mat-label>Hide DELAY</mat-label>
+                            <input matInput type="number" value='2000'>
+                             </mat-form-field>
+                               </div>
+                               <button  class="buttons-primary" mat-button >action</button>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="flex_content-3">
+            <div class="item-flex-1">
+                <div class="item-top">
+                    <h2>Change Message</h2>
+                </div>
+                <div class="item-bottoms">
+                <div>  <mat-form-field class="example-full-width examplesss">
+                        <mat-label>Info about the action</mat-label>
+                        <input matInput  >
+                      </mat-form-field></div>
+                  
+                  
+                      <button  class="buttons-primary" mat-button >action</button>
                 </div>
             </div>
         </div>

@@ -1,0 +1,180 @@
+//  Form Login CSS
+.mains {
+    width: 100%;
+    min-height: 100vh;
+    max-height: 900vh;
+    background-color: #f0f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form {
+    border-radius: 10px;
+    background-color: #fff;
+    min-width: 200px;
+    padding: 6px;
+    width: 500px;
+    max-height: 700px;
+}
+
+.form_img {
+    display: flex;
+    justify-content: center;
+}
+
+.form_img img {
+    width: 180px;
+    height: 50px;
+    margin-top: 10px;
+}
+.page_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.page_google_icon {
+    padding: 5px 10px 5px 10px;
+    border-radius: 100px;
+    display: flex;
+    border: 1px solid #8d97ad;
+    cursor: pointer;
+    margin: 10px;
+    max-width:200px;
+
+}
+.page_google_icon  span {
+    margin-left: 10px;
+    color:#000;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+.page_google_icon:hover {
+    background-color:#bcbdc0;
+  
+}
+.page_google_icon img {
+    width: 20px;
+}
+.page_facebook_icon {
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 100px;
+    display: flex;
+    border: 1px solid #8d97ad;
+    cursor: pointer;
+    max-width:200px;
+}
+.page_facebook_icon img {
+    width: 40px;
+}
+.page_facebook_icon span {
+    margin-left: 4px;
+    color:#000;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+.page_facebook_icon:hover {
+    background-color:#bcbdc0;
+  
+}
+.page_orsign {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page_orsign > div {
+    margin: 15px;
+    color: #bcbdc0;
+}
+.users_input {
+    text-align: center;
+}
+.users_input  label {
+    display: block;
+    margin-top: 10px;
+    text-align: start;
+    margin-left: 20px;
+
+    line-height: 14px;
+
+    letter-spacing: normal;
+
+    
+    color: #111c2d;
+}
+.users_input  input {
+    border-radius: 15px ;
+    border: 1px solid #111c2d;
+    width: 90%;
+    padding: 15px;
+    outline-color: blue;
+    color: #111c2d;
+    margin-top: 10px;
+}
+.password_input  {
+    text-align: center;
+}
+.password_input  label {
+    display: block;
+    margin-top: 10px;
+    text-align: start;
+    margin-left: 20px;
+     line-height: 14px;
+    letter-spacing: normal;
+    color: #111c2d;
+}
+.password_input input {
+     border-radius: 15px ;
+    border: 1px solid #111c2d;
+    width: 90%;
+    padding: 15px;
+    outline-color: blue;
+    color: #111c2d;
+    margin-top: 10px;
+}
+.checkbox_form {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.checkbox_form a {
+    color: blue;
+    cursor: pointer;
+    margin-top: 6px;
+}
+.buttons_form {
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+}
+.buttons_form button {
+    background-color: #0085db;
+    padding: 15px;
+    color: #fff;
+    border: none;
+    font-size:1.3rem;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 90%;
+    font-family: sans-serif;
+}
+.buttons_form button:active{
+    opacity:0.5;
+}
+.texts_form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.texts_form p {
+    font-family:sans-serif
+}
+.texts_form a {
+    color:blue;
+    font-weight: 400;
+   cursor: pointer;
+}
