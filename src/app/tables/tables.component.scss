@@ -1,0 +1,28 @@
+.main {
+    margin:10px;
+    width: 1140px;
+    height:720px;
+    background-color:#0a1422;
+    // background-color:#1e2136;
+
+    // 2c2e40
+}
+.tablers svg {
+    fill:#fff;
+
+}
+header {
+    position:fixed;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+header::-webkit-scrollbar {
+      background-color:#15172a ;
+}
+
+header .undered ul {
+    display:flex;   
+}

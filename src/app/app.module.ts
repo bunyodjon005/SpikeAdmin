@@ -19,6 +19,8 @@ import { MenuComponent } from './menu/menu.component';
 import { TooltipsComponent } from './tooltips/tooltips.component';
 import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http';
+import { IconsComponent } from './icons/icons.component';
+import { TablesComponent } from './tables/tables.component';
 
 
 
@@ -35,6 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     MenuComponent,
     TooltipsComponent,
     RegisterComponent,
+    IconsComponent,
+    TablesComponent,
 
 
    
