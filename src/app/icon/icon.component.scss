@@ -1,0 +1,128 @@
+.main {
+    background-color:#0a1422;
+    width: 1120px;
+    height: auto;
+}
+
+.contents-1 {
+    margin-top:50px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+}
+.carusel-container {
+    position: relative;
+   
+
+}
+.carusel-container img {
+display:none;
+}
+.carusel-container img.image-active {
+    width: 250px;
+    height:250px;
+    display:block;
+}
+.carusel-dod-container {
+    // position:absolute;
+   top:600px;
+    display:flex;
+    padding:0;
+    justify-content:center;
+    margin-bottom:1rem;
+}
+
+.dot {
+    cursor:pointer;
+    height: 12px;
+    width:12px;
+    margin:0 5px;
+    background-color:#fff;
+    border-radius: 50%;
+    display:inline-block;
+    transition: opacity 0.6s ease;
+    opacity:0.5;
+}
+.active,
+.dot:hover {
+    opacity:1;
+}
+.fade {
+    animation-name: fade;
+    animation-duration:1s;
+}
+@keyframes fade {
+    from {
+        opacity:0.4;
+    }
+    to {
+        opacity:1;
+    }
+}
+.btn-carusel {
+    cursor:pointer;
+    color:#fff;
+    position: absolute;
+   top:470px;
+    left:290px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:15%;
+    background:0 0;
+    border:0;
+}
+.btn-carusel-2 {
+    cursor:pointer;
+    color:#fff;
+    position: absolute;
+   top:470px;
+    left:690px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:15%;
+    background:0 0;
+    border:0;
+}
+.icon-carusel {    color: #fff;
+    opacity:0.5;
+    transition:all 0.15s ease;
+}
+.icon-carusel:hover {
+
+    opacity: 0.6;
+}
+.icon-carusel:active {
+    opacity:0.9;
+}
+.container {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contents_text {
+    margin-bottom:50px;
+}
+.contents_text .title h6{
+    color:#006ed9;
+    font-size:1.2rem;
+    font-family:sans-serif;
+}
+.contents_text .title h2 {
+    color:#c4cad4;
+    font-size:2.9rem;
+    max-width:500px;
+    min-width:50px;
+    line-height:50px;
+    width:450px;
+}
+.contents_text .title p {
+    width:500px;
+    font-size:1.2rem;
+    min-width:50px;
+    max-width:600px;
+    font-family:sans-serif;
+    color:#c4cad4;
+}

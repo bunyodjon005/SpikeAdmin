@@ -2,27 +2,35 @@
     margin:10px;
     width: 1140px;
     height:720px;
+
     background-color:#0a1422;
     // background-color:#1e2136;
 
     // 2c2e40
 }
-.tablers svg {
-    fill:#fff;
-
-}
-header {
-    position:fixed;
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 10px;
+.fixed {
+    position: fixed;
+    width:1140px;
+    transition:0.2s linear;
+        background-color:#1e2136;
+        border-bottom:0.1px solid #fff
     
 }
-header::-webkit-scrollbar {
-      background-color:#15172a ;
+.nofixed {
+    position:static;
+    transition:0.2s linear;
+   
+}
+::-webkit-scrollbar {
+    height: 0;
+    width: .5rem;
 }
 
-header .undered ul {
-    display:flex;   
+ ::-webkit-scrollbar-track {
+    background: var(--secon-bg-color);
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: var(--hover-color);
+    border-radius: 5rem;
 }

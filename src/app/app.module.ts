@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -21,7 +20,8 @@ import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { IconsComponent } from './icons/icons.component';
 import { TablesComponent } from './tables/tables.component';
-
+import { HeaderComponent } from './header/header.component';
+import { IconComponent } from './icon/icon.component';
 
 
 
@@ -39,10 +39,8 @@ import { TablesComponent } from './tables/tables.component';
     RegisterComponent,
     IconsComponent,
     TablesComponent,
-
-
-   
-
+    HeaderComponent,
+    IconComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,13 +52,7 @@ import { TablesComponent } from './tables/tables.component';
 NgxChartsModule,
 MatBadgeModule,
 HttpClientModule
-
-
-
-
-    
-    
-  ],
+],
   providers: [],
   bootstrap: [AppComponent]
 })

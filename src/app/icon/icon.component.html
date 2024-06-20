@@ -1,0 +1,40 @@
+<div class="main">
+    <div class="container"><div  class="contents-1">
+        <div class="carusel-container" *ngIf="images && images.length > 0" >
+<img *ngFor="let image of images; let i=index" [src]="image.ImageSrc" [alt]="image.ImageAlt"
+   [ngClass]="{'image-active':selectedIndex === i}" class="fade">
+        </div> 
+        <div *ngIf="indicators" class="carusel-dod-container">
+          <span *ngFor="let dot of images; let i=index" class="dot" [ngClass]="{'active':selectedIndex === i}" (click)="selectedImage(i)" ></span>
+        </div>
+        <button *ngIf="controls" class="btn-carusel btn-prev">
+        <mat-icon class="fas fa-arrow-circle-left icon-carusel icon-prev" (click)="onPrevClick()">
+            arrow_back_ios
+        </mat-icon>
+    </button>
+    <button *ngIf="controls" class="btn-carusel-2 btn-next">
+        <mat-icon class="fas fa-arrow-circle-right icon-carusel icon-prev" (click)="onNextClick()">
+     
+arrow_forward_ios
+
+        </mat-icon>
+    </button>
+       
+   
+    </div> <div class="contents_text">
+ <div class="title">
+    <h6>TABLER ICONS</h6>
+    <h2>
+        5307 pixel-perfect icons for web design
+    </h2>
+    <p>
+        Free and open source icons designed to make your website or app attractive, visually consistent and simply beautiful.<p>
+            <div class="flex_img">
+                <h4>Available:</h4>
+            </div>
+ </div>
+    </div>
+ </div>
+    
+   <div></div>
+</div>

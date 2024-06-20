@@ -1,0 +1,43 @@
+.tablers svg {
+    fill:#fff;
+    color: #fff;
+
+}
+header nav {
+     display:flex;
+    justify-content:space-between;
+  transition: 0.2s linear;
+    padding: 10px;
+ 
+}
+
+header .undered ul {
+    display:flex;   
+    justify-content:end;
+    padding: 10px;
+    text-align:end;
+}
+header .undered ul li {
+    color: rgb(148, 148, 148);
+    margin:6px;
+    font-size: 1rem;
+    font-family:var(  --font-familys);
+    cursor:pointer;
+}
+header .undered ul li:hover {
+ color:#fff;
+ transition:0.2s;
+}
+.fixed {
+    position: fixed;
+    width:1120px;
+    transition:0.2s linear;
+        background-color:#1e2136;
+        border-bottom:0.1px solid #fff
+    
+}
+.nofixed {
+    position:static;
+    transition:0.2s linear;
+   
+}
