@@ -2,6 +2,7 @@
     background-color:#0a1422;
     width: 1120px;
     height: auto;
+    overflow:hidden;
 }
 
 .contents-1 {
@@ -63,9 +64,9 @@ display:none;
 .btn-carusel {
     cursor:pointer;
     color:#fff;
-    position: absolute;
+    position: static;
    top:470px;
-    left:290px;
+    left:220px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -76,7 +77,7 @@ display:none;
 .btn-carusel-2 {
     cursor:pointer;
     color:#fff;
-    position: absolute;
+    position: static;
    top:470px;
     left:690px;
     display:flex;
@@ -186,4 +187,11 @@ color:#c4cad1;
 }
 .changelog {
     color:#c4cad4;    
+}
+.container-2 {
+    margin-top:30px;
+    
+    width:1150px;
+    height:400px;
+    background-color: #1e2734;
 }

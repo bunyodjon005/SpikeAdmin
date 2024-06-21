@@ -2,7 +2,7 @@
     margin:10px;
     width: 1140px;
     height:720px;
-
+overflow: auto;
     background-color:#0a1422;
     // background-color:#1e2136;
 
@@ -21,16 +21,16 @@
     transition:0.2s linear;
    
 }
-::-webkit-scrollbar {
-    height: 0;
-    width: .5rem;
-}
+// ::-webkit-scrollbar {
+//     height: 0;
+//     width: .5rem;
+// }
 
- ::-webkit-scrollbar-track {
-    background: var(--secon-bg-color);
-}
+//  ::-webkit-scrollbar-track {
+//     background: var(--secon-bg-color);
+// }
 
- ::-webkit-scrollbar-thumb {
-    background-color: var(--hover-color);
-    border-radius: 5rem;
-}
+//  ::-webkit-scrollbar-thumb {
+//     background-color: var(--hover-color);
+//     border-radius: 5rem;
+// }
