@@ -6,15 +6,7 @@ import { Component ,HostListener } from '@angular/core';
   styleUrls: ['./tables.component.scss']
 })
 export class TablesComponent {
-  navbarfixed:boolean=false;
-@HostListener("window:scroll",['$event']) onscrol(){
-if(window.scrollY > 6){
-  this.navbarfixed=true;
-}
-else {
-  this.navbarfixed=false;
-}
-}
+
 
 image = [ 
   { ImageSrc:'./assets/photo_2024-06-19_23-56-49-removebg-preview (1).png',
@@ -43,4 +35,6 @@ image = [
 image2=[
   
 ]
+
+
 }

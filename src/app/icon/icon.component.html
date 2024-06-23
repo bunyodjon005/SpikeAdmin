@@ -1,13 +1,11 @@
 <div class="main">
+    <app-header ></app-header>
     <div class="container"><div  class="contents-1">
         <div class="carusel-container" *ngIf="images && images.length > 0" >
 <img *ngFor="let image of images; let i=index" [src]="image.ImageSrc" [alt]="image.ImageAlt"
    [ngClass]="{'image-active':selectedIndex === i}" class="fade">
         </div> 
-        <div *ngIf="indicators" class="carusel-dod-container">
-          <span *ngFor="let dot of images; let i=index" class="dot" [ngClass]="{'active':selectedIndex === i}" (click)="selectedImage(i)" ></span>
-        </div>
-        <button *ngIf="controls" class="btn-carusel btn-prev">
+        <div class="indicatorss_next"> <button *ngIf="controls" class="btn-carusel btn-prev">
         <mat-icon class="fas fa-arrow-circle-left icon-carusel icon-prev" (click)="onPrevClick()">
             arrow_back_ios
         </mat-icon>
@@ -18,7 +16,11 @@
 arrow_forward_ios
 
         </mat-icon>
-    </button>
+    </button></div>
+        <div *ngIf="indicators" class="carusel-dod-container">
+          <span *ngFor="let dot of images; let i=index" class="dot" [ngClass]="{'active':selectedIndex === i}" (click)="selectedImage(i)" ></span>
+        </div>
+       
        
    
     </div> <div class="contents_text">
@@ -60,6 +62,36 @@ arrow_forward_ios
     </div>
  </div>
  <div class="container-2" > 
+<div class="content-page">
+<div class="right_page">
+    <div class="right_title-page"><h3>Customize icons</h3>
+    <mat-icon>refresh</mat-icon>   </div>
+    <div class="right_title-page">
+        <h4>Style:</h4>
+        <mat-slide-toggle
+        class="example-margin"
+        [color]="color"
+        >
+     
+    </mat-slide-toggle>
+    </div>
+    <div class="right_title_page">
+        <h3>Size</h3>      <label class="example-value-label">{{slider.value}}</label>
+     
+        <mat-slider
+        class="example-margin"
+        [disabled]="disabled"
+        [max]="max"
+        [min]="min"
+        [step]="step"
+        [discrete]="thumbLabel"
+        [showTickMarks]="showTicks">
+      <input matSliderThumb [(ngModel)]="value" #slider>
+    </mat-slider>
+    </div>
+</div>
+<div></div>
+</div>
 
  </div>
    <div>

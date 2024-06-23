@@ -70,20 +70,22 @@ display:none;
     display:flex;
     align-items:center;
     justify-content:center;
-    width:15%;
+    width:20px;
     background:0 0;
     border:0;
+    margin-right:30px;
 }
 .btn-carusel-2 {
     cursor:pointer;
     color:#fff;
     position: static;
-   top:470px;
+   top:460px;
     left:690px;
     display:flex;
     align-items:center;
     justify-content:center;
-    width:15%;
+    width:20px;
+    margin-left:30px;
     background:0 0;
     border:0;
 }
@@ -189,9 +191,80 @@ color:#c4cad1;
     color:#c4cad4;    
 }
 .container-2 {
-    margin-top:30px;
-    
+
+        margin-top:40px;
     width:1150px;
-    height:400px;
+    height:700px;
     background-color: #1e2734;
 }
+.indicatorss_next {
+    display:flex;
+    width:auto;
+    margin:10px;
+}
+
+.content-page {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   
+
+}
+.right_page {
+    background-color: #0a1422;
+    width:350px;
+    height:400px;
+     margin-top: 60px;
+    border-radius:10px;
+
+}
+.right_title-page {
+    display: flex;
+    justify-content: space-around;
+    padding:10px;
+}
+.right_title-page h3 {
+    color:#c4cad4;
+    margin: 6px;
+    font-size: 1.4rem;
+
+}
+.right_title-page h4 {
+    color:#c4cad4;
+    margin: 6px;
+    font-size: 1.2rem;
+
+}
+.right_title-page mat-icon {
+    color:#c4cad4;
+    font-size:1.2rem;
+    margin:6px;
+    cursor:pointer
+}
+.example-h2 {
+    margin: 10px;
+  }
+  
+  .example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 20px;
+  }
+  
+  .example-margin {
+    margin: 10px;
+  }
+  mat-slider {
+    width: 250px;
+    margin-top:-30px;
+    margin: 10px;
+  }
+  label {
+    margin:10px;
+  }
+  .right_title_page {
+    color:#c4cad4;
+   
+    font-size: 1.4rem;
+  }

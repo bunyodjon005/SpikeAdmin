@@ -1,4 +1,10 @@
-import { Component , OnInit , Input} from '@angular/core';
+import { Component , OnInit , Input , HostListener} from '@angular/core';
+import {ThemePalette} from '@angular/material/core';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {FormsModule} from '@angular/forms';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatCardModule} from '@angular/material/card';
 interface caruselImage{
 ImageSrc:string;
 ImageAlt:string;
@@ -36,4 +42,32 @@ if(this.selectedIndex ===0){
       this.selectedIndex++;
     }
   }
+  navbarfixed:boolean=false;
+  @HostListener("window:scroll",['$event']) onscrol(){
+  if(window.scrollY > 5){
+    this.navbarfixed=true;
+  }
+  else {
+    this.navbarfixed=false;
+  }
+  }
+
+  color: ThemePalette = 'accent';
+  checked = false;
+  disabled = false;
+  formatLabel(value: number): string {
+    if (value >= 1000) {
+      return Math.round(value / 1000) + 'k';
+    }
+
+    return `${value}`;
+  }
+
+
+  max = 100;
+  min = 0;
+  showTicks = false;
+  step = 1;
+  thumbLabel = false;
+  value = 0;
 }
