@@ -28,16 +28,17 @@ header .undered ul li:hover {
  color:#fff;
  transition:0.2s;
 }
-.fixed {
-    position: fixed;
-    width:1120px;
-    transition:0.2s linear;
-        background-color:#1e2136;
-        border-bottom:0.1px solid #fff
-    
+.menus {
+    display:none;
 }
-.nofixed {
-    position:static;
-    transition:0.2s linear;
-   
+
+// Responsive Design
+@media only screen and (max-width:1280px){
+    header .undered ul {
+        display:none;
+    }
+    .menus {
+        display:block;
+        color:#fff;
+    }
 }
