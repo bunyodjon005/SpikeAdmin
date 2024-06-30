@@ -1,4 +1,4 @@
-<!-- <div class="mains" *ngIf="!authen.isLoggedin()">
+<div class="mains" *ngIf="!authen.isLoggedin()">
   <form action="">
     <div class="form_img">
       <img src="./assets/dark-logo.svg" alt="photo error!">
@@ -42,8 +42,8 @@
  <p>New to Spike? <a>Create an account</a> </p>
     </div>
   </form>
-</div> *ngIf="authen.isLoggedin()" -->
-<div class="main"  >
+</div> 
+<div class="main" *ngIf="authen.isLoggedin()" >
   <app-sidenav></app-sidenav>
   <mat-toolbar>
     <div>

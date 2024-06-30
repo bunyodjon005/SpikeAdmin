@@ -22,6 +22,7 @@ import { IconsComponent } from './icons/icons.component';
 import { TablesComponent } from './tables/tables.component';
 import { HeaderComponent } from './header/header.component';
 import { IconComponent } from './icon/icon.component';
+import { ModalIconComponent } from './modal-icon/modal-icon.component';
 
 
 
@@ -41,6 +42,7 @@ import { IconComponent } from './icon/icon.component';
     TablesComponent,
     HeaderComponent,
     IconComponent,
+    ModalIconComponent,
   ],
   imports: [
     BrowserModule,
